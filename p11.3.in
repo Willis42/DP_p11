@@ -1,0 +1,3 @@
+init(on(boat,left); on(fox,left); on(goose,left); on(beans,left)).
+
+goal(on(boat,right); on(fox,right); on(goose,right); on(beans,right)).

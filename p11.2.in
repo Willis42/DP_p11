@@ -1,0 +1,4 @@
+#const t=2.
+
+%tail(on(boat,left); on(fox,left); on(goose,left); on(beans,right)).
+tail(on(boat,right); on(fox,right); on(goose,left); on(beans,right)).

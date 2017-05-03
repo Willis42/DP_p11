@@ -1,0 +1,3 @@
+#const t=2.
+
+tail(on(boat,left); on(a,left); on(b, left); on(c, right)).

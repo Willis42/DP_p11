@@ -15,7 +15,7 @@ h(F,0) :- init(F).
 % An action is executed between times t-1 and t
 {move(I,L,t) : item(I), location(L), I!=boat} 1.
 1 {move(boat,L,t) : location(L)} 1.
-% achieved: the boat and possibly 1 item move from one island to the other
+% achieved: the boat and possibly 1 item move from one side to the other
 
 % Effect of move(I,L)
 h(on(I,L),t) :- move(I,L,t).

@@ -21,7 +21,7 @@ h(F,0) :- init(F).
 h(on(I,L),t) :- move(I,L,t).
 
 % That action is not executable
-% if the boat is already on the island you're moving to (therefore not on the same island you're moving from):
+% if the boat is already on the side you're moving to (therefore not on the same side you're moving from):
 :- move(I,L,t), h(on(boat,L),t-1).
 % or if I is already at L:
 :- move(I,L,t), h(on(I,L),t-1).

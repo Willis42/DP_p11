@@ -25,11 +25,9 @@ h(on(I,L),t) :- move(I,L,t).
 :- move(I,L,t), h(on(boat,L),t-1).
 % or if I is already at L:
 :- move(I,L,t), h(on(I,L),t-1).
-% or if the move would leave the fox and goose together without
-% the boat in that location:
+% or if the move would leave the fox and goose together unattended:
 :- h(on(fox,L),t), h(on(goose,L),t), not h(on(boat,L),t).
-% or if the move would leave the goose and the beans together without
-% the boat in that location:
+% or if the move would leave the goose and the beans together unattended:
 :- h(on(goose,L),t), h(on(beans,L),t), not h(on(boat,L),t).
 
 % Existence and uniqueness of location
